@@ -1,730 +1,373 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!-- Default Meta Tag -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- OG Meta Tag -->
-    <meta name="robots" content="index, follow">
-    <meta name="og:title" content="NextGenAppsPro - Free Bootstrap 5 Portfolio Website Template">
-    <meta name="og:description" content="NextGenAppsPro - Portfolio Website Template is fully responsive and customizable, you can create portfolio websites in minutes.">
-    <meta property="og:image" content="https://www.designtocodes.com/wp-content/uploads/2023/11/NextGenApps-Pro-Free-Bootstrap-5-Portfolio-Website-Template.jpg">
-    <!-- Title -->
-    <title>ALMA MATEO</title>
-    <!-- Favicon -->
-    <link rel="icon" id="favicon" href="./assets/images/LOGO-1-A.png" type="image/gif" sizes="16x16">
-    <!-- Font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Animate CSS Link -->
-    <link rel="stylesheet" href="./lib/WOW-master/css/libs/animate.css">
-    <!-- Font Awesome 5 CDN/Icon Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Fancybox Image Gallery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <!-- Slider CSS Link -->
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./lib/slick-1.8.1/slick/slick-theme.css">
-    <!-- Bootstrap CSS Link -->
-    <link rel="stylesheet" href="./lib/bootstrap-5/css/bootstrap.min.css">
-    <!-- Main CSS Link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Responsive CSS Link -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+  <title>Slick Playground</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
-    <!--  Preloader Start  -->
-    <div class="preloader">
-        <img src="./assets/images/LOGO-LARGO-N.png" alt="Preloader Logo" >
+
+  <section class="vertical-center-4 slider">
+    <div>
+      <img src="http://placehold.it/350x100?text=1">
     </div>
-    <!--  Preloader End  -->
+    <div>
+      <img src="http://placehold.it/350x100?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=9">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=10">
+    </div>
+  </section>
 
-    <!-- Header Start -->
-    <header class="d2c_navbar sticky-top">
-        <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg px-0 py-0" id="d2c_main_nav"> 
-                <!-- Logo -->
-                <a class="navbar-brand" href="./index.html"><img src="./assets/images/LOGO-LARGO-A.png" class="w-100" alt="Logo" ></a>
-                <!-- Logo -->
-                <!-- HamBurger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span>
-                </button>
-                <!-- HamBurger -->
-                <!-- Nav Item -->
-                <div class="collapse navbar-collapse js-clone-nav justify-content-center">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill">Presencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#work">Fotografías</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Portafolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Testimonios</a>
-                        </li>
-                        <li class="nav-item pt-1">
-                            <a href="#contact" class="btn nav-link d-block d-lg-none">Contáctame</a>
-                        </li>
-                    </ul>
-                </div>
-                <a href="#contact" class="btn d-none d-lg-block">Contáctame</a>
-                <!-- Nav Item -->
-            </nav>
-            <!-- Navbar -->
-            <!-- Tab and Mobile View -->
-            <div class="collapse navbar-collapse d2c_mobile_view" id="navbarSupportedContent">
-                <div class="show_width container">
-                    <div class="text-right">
-                        <button class="navbar-toggler d2c_cross_btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span><i class="fa fa-times"></i></span>
-                        </button>
-                    </div>
-                    
-                    <div class="navbar px-0 d2c_mobile_view_body"></div>
-                </div>
-            </div>
-            <!-- Tab and Mobile View -->
-        </div>
-    </header>
-    <!-- Header End -->
+  <section class="vertical-center-3 slider">
+    <div>
+      <img src="http://placehold.it/350x100?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=9">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=10">
+    </div>
+  </section>
 
-    <main data-bs-spy="scroll" data-bs-target="#d2c_main_nav" class="position-relative">
-        <!-- Hero Section Start -->
-        <section class="d2c_hero_wrapper position-relative" id="home">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 mb-5 mb-lg-0 text-center text-md-start wow fadeInLeft">
-                        <h1>Alma Mateo </h1>
-                        <h2>- En la oscuridad de nuestros límites, el alma brilla más fuerte cuando se atreve a seguir adelante -</h2>
-                        <p>Diseñadora gráfica especializada en diseño web.</p>
-                        <a href="#about" class="btn d2c_secondary_btn">Leer más</a>
-                       
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d2c_hero_right wow fadeInRight">
-                            <img src="./assets/images/Hero_right_img.png" class="img-fluid" alt="Hero Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-            <img src="./assets/images/horizontal_wave.png" alt="Horizontal Wave">
-            <img src="./assets/images/vertical_wave.png" alt="Vertical Wave">
-        </section>
-        <!-- Hero Section End -->
+  <section class="vertical-center-2 slider">
+    <div>
+      <img src="http://placehold.it/350x100?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=9">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=10">
+    </div>
+  </section>
 
-        <div class="d2c_about_expertise_bg">
-            <!-- About Section Start -->
-            <section class="d2c_about_wrapper position-relative" id="about">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 order-1 order-lg-0">
-                            <div class="d2c_about_left position-relative wow fadeInLeft">
-                                <img src="./assets/images/about_left_img.png" class="img-fluid" alt="About Image">
-                                <div class="d2c_about_card wow fadeInUp">
-                                    <h3 class="mb-lg-2 mb-xxl-3">Diseñadora web</h3>
-                                    <div id="counters_2">
-                                        <p class="mb-0"><span class="count" data-TargetNum="180">Diseñando con el alma</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 ps-3 ps-lg-5 order-0 order-lg-1 mb-4 mb-md-5 mb-lg-0 wow fadeInRight">
-                            <h6>Sobre mí</h6>
-                            <h2 class="mb-3">Soy una diseñadora apasionada</h2>
-                            <p>Me apasiona crear experiencias visuales que conecten con las personas y potencien la identidad de cada proyecto. Mi enfoque está en el detalle, la funcionalidad y la creatividad para llevar ideas a la realidad digital.</p>
-                            <h5 class="mb-lg-2 mb-xl-3">Misión</h5>
-                            <p class="mb-lg-3 mb-xxl-4">Soy una creadora en evolución, comprometida a usar mi arte para inspirar y transformar. Mi misión es diseñar con propósito, generando un impacto que trascienda y conecte con el mundo.
-                            </p>
-                            <h5 class="mb-lg-2 mb-xl-3">Visión</h5>
-                            <p class="mb-3 mb-md-0">Mi visión es ser una creadora que inspira y genera impacto a través de mi trabajo. Aspiro a construir una carrera en la que el arte, la tecnología y el propósito social se entrelacen, ofreciendo soluciones visuales y educativas que no solo embellezcan, sino que también contribuyan a un cambio positivo en la sociedad.</p>
-                        </div>
-                    </div>
-                    <div class="d2c_counter_wrapper" id="counters_1">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
-                                <div class="d2c_card text-center">
-                                    <h2 class="fab fa-instagram"></h2>
-                                    <h5 class="mb-0">Instagram</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-4 mb-md-0 wow fadeInUp">
-                                <div class="d2c_card text-center">
-                                    <h2 class="fab fa-tiktok"></h2>
-                                    <h5 class="mb-0">Tiktok</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-4 mb-md-0 wow fadeInUp">
-                                <div class="d2c_card text-center">
-                                    <h2 class="fab fa-linkedin"></h2>
-                                    <h5 class="mb-0">LinkedIn</h5>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 wow fadeInUp">
-                                <div class="d2c_card text-center">
-                                    <h2 class="fab fa-whatsapp"></h2>
-                                    <h5 class="mb-0">WhatsApp</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-                <img src="./assets/images/add_element.png" alt="Add Element">
-                <img src="./assets/images/square_element.png" alt="Square Element">
-            </section>
-            <!-- About Section End -->
+  <section class="vertical-center slider">
+    <div>
+      <img src="http://placehold.it/350x100?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=9">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=10">
+    </div>
+  </section>
 
-            <!-- Hobbies Section Start -->
-            <section class="d2c_hobbies_wrapper position-relative">
-                <div class="container">
-                    <h6 class="text-center">Hobbies y aptitudes</h6>
-                    <h2 class="text-center">Cosas que amo hacer</h2>
-                    <p style="text-align: center; max-width: 850px; margin: 0 auto;">La creatividad va más allá del trabajo. Mis hobbies y aptitudes personales enriquecen mi enfoque y me permiten explorar nuevas perspectivas. Desde actividades creativas hasta desafíos personales, cada uno de estos intereses forma parte de quién soy.</p> <br>
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Pintar</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Investigación</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Cocinar</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-lg-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Escuchar música</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Marketing Digital</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Ilustraciones Digitales</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
-                            <div class="d2c_card text-center"><h5 class="mb-0 wow fadeInUp">Fotografía</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Programación</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Viajar</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-lg-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Bailar</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Leer</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Finanzas</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-xl-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Trabajo en equipo</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Adaptabilidad</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Resolución de problemas</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Comunicación efectiva</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 offset-0 offset-lg-3 offset-xl-0 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Creatividad</h5></div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 wow fadeInUp">
-                            <div class="d2c_card text-center"><h5 class="mb-0">Organización</h5></div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-                <img src="./assets/images/square_element.png" alt="Square Element">
-            </section>
-            <!-- Hobbies Section End -->
-        </div>
-        
-        <div class="d2c_services_skill_bg">
-            <!-- Services Section Start -->
-            <section class="d2c_services_wrapper position-relative" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
-                            <h6>Habilidades</h6>
-                            <h2 class="mb-3">Mis fortalezas</h2>
-                            <p >Mis habilidades son el resultado de años de aprendizaje y dedicación. Cada competencia refleja mi compromiso y pasión por el diseño y la comunicación efectiva.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 mb-4 wow fadeInDown">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_one.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Diseño web</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-md-4 wow fadeInDown">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_two.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Diseño 3D </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInDown">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_three.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Edición fotográfica</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-md-4 wow fadeInDown">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_four.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Branding</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_five.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0"> Diseño UI/UX</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-md-4 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_six.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Fotografía</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-4 mb-md-4 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_seven.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Marketing Digital</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <div class="d2c_img_border">
-                                    <div class="d2c_img_wrapper">
-                                        <img src="./assets/images/services_eight.svg" alt="Services Icon">
-                                    </div>
-                                </div>
-                                <h5 class="mb-0">Ilustración digital</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-            </section>
-            <!-- Services Section End -->
+  <section class="vertical slider">
+    <div>
+      <img src="http://placehold.it/350x100?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=9">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x100?text=10">
+    </div>
+  </section>
+  <section class="regular slider">
+    <div>
+      <img src="http://placehold.it/350x300?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=6">
+    </div>
+  </section>
 
-            <!-- Skill Section Start -->
-            <section class="d2c_skill_wrapper position-relative" id="skill">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 text-center text-md-start mb-4 mb-md-5 mb-lg-0 wow fadeInLeft">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-12">
-                                    <h6>Presencia</h6>
-                                    <h2 class="mb-3">Algunas participaciones en foros y podcast</h2>
-                                    <p class="pe-0 pe-lg-5">Explora mis contribuciones en diversos espacios de conversación y aprendizaje. A través de foros y podcasts, comparto ideas, experiencias y conocimientos sobre diseño, comunicación y temas que nos inspiran a todos. Sumérgete en estos contenidos y descubre nuevas perspectivas.</p>
-                                </div>
-                                <div class="col-md-6 col-lg-12">
-                                    <ul class="list-group list-group-horizontal justify-content-center justify-content-lg-start">
-                                        <li class="">
-                                            <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7251925847832420353?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7251925847832420353%2C7259365522570387456%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287259365522570387456%2Curn%3Ali%3AugcPost%3A7251925847832420353%29 "  target="_blank"><span>Foro</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/posts/tj-marketing-services_neuromarketing-photography-brandtrust-activity-7254406179487891457-1QFR?utm_source=share&utm_medium=member_android "  target="_blank"><span>Foro</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7252796101487943680?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7252796101487943680%2C7259359287796260864%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287259359287796260864%2Curn%3Ali%3AugcPost%3A7252796101487943680%29 " target="_blank"><span>Foro</span></a>
-                                        </li>
-                                    </ul>
-                                    <ul class="list-group list-group-horizontal justify-content-center justify-content-lg-start">
-                                        <li class="mb-0">
-                                            <span>Podcast</span>
-                                        </li>
-                                        <li class="mb-0">
-                                            <span>Podcast</span>
-                                        </li>
-                                        <li class="mb-0">
-                                            <span>Podcast</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="d2c_skill_right wow fadeInRight">
-                                <img src="./assets/images/skill_right_img.png" class="img-fluid" alt="Skill Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/square_element.png" alt="Square Element">
-                <img src="./assets/images/circle_element.png" alt="Circle Element">
-            </section>
-            <!-- Skill Section End -->
-        </div>
+  <section class="center slider">
+    <div>
+      <img src="http://placehold.it/350x300?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=6">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=7">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=8">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=9">
+    </div>
+  </section>
 
-        <div class="d2c_portfolio_pricing_bg">
-            <!-- Portfolio Section Start -->
-            <section class="d2c_portfolio_wrapper position-relative" id="work">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2 text-center">
-                            <h6>Fotografías y arte</h6>
-                            <h2 class="mb-3">Un espacio donde capturo momentos y transformo ideas en imágenes </h2>
-                            <p>Mi pasión por la fotografía y el arte se refleja en cada detalle, buscando transmitir emociones, historias y perspectivas únicas. Explora esta colección visual y descubre mi visión del mundo a través del lente y el pincel.</p>
-                        </div>
-                    </div>
-                    <div class="d2c_grid">
-                        <div class="d2c_grid_item wow fadeInLeft mb-4" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/4.JPG"></a>
-                        </div>
-                        <div class="d2c_grid_item wow fadeInLeft mb-4 mb-lg-0" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/5.JPG"></a>
-                        </div>
-                        <div class="d2c_grid_item wow fadeInDown mb-4" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/6.jpg"></a>
-                        </div>
-                        <div class="d2c_grid_item wow fadeInUp mb-4 mb-lg-0" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/1.jpg"></a>
-                        </div>
-                        <div class="d2c_grid_item wow fadeInRight mb-4" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/2.jpg"></a>
-                        </div>
-                        <div class="d2c_grid_item wow fadeInRight" data-wow-duration="2s">
-                            <a data-fancybox="gallery" class="fancybox" href="./assets/images/3.jpgs"></a>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-                
-                <img src="./assets/images/square_element.png" alt="Square Element">
-            </section>
-            <!-- Portfolio Section End -->
+  <section class="variable slider">
+    <div>
+      <img src="http://placehold.it/350x300?text=1">
+    </div>
+    <div>
+      <img src="http://placehold.it/200x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/100x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/200x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/300x300?text=6">
+    </div>
+  </section>
 
-            <!-- Pricing Section Start -->
-            <section class="d2c_pricing_wrapper position-relative" id="pricing">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-xl-8 offset-md-1 offset-xl-2 text-center">
-                            <h6>Portafolio</h6>
-                            <h2 class="mb-3">Transformando ideas en experiencias visuales</h2>
-                            <p>Bienvenido a mi portafolio, donde cada proyecto cuenta una historia única a través del diseño. Explora mi trabajo en branding, diseño web e ilustración, y descubre cómo cada uno refleja mi enfoque en la creatividad, funcionalidad y detalles que marcan la diferencia.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 wow fadeInLeft">
-                            <div class="d2c_card text-center">
-                                <h2>Portafolio</h2>
-                                <h1>Ilustraciones</h1>
-                                <div class="d2c_card_body">
-                                    <p style="text-align: center; max-width: 350px;">Cada ilustración cuenta una historia y da vida a ideas de manera visual. En este portafolio, encontrarás una variedad de estilos y técnicas que muestran mi enfoque artístico y detallista, adaptado a cada proyecto para expresar conceptos y emociones.</p>
-                                </div>
-                                <a href="" class="btn">Ver</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-4 mb-md-0 wow fadeInUp">
-                            <div class="d2c_card text-center">
-                                <h2>Portafolio</h2>
-                                <h1>Web</h1>
-                                <div class="d2c_card_body">
-                                    <p style="text-align: center; max-width: 350px;">Un buen diseño web es funcional y atractivo, pensado para guiar al usuario y comunicar efectivamente. Este portafolio reúne proyectos de diseño web que fusionan estética y usabilidad, creando experiencias digitales únicas y memorables.</p>
-                                </div>
-                                <a href="" class="btn">Ver</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 offset-0 offset-md-3 offset-lg-0 wow fadeInRight">
-                            <div class="d2c_card text-center">
-                                <h2>Portafolio</h2>
-                                <h1> Branding</h1>
-                                <div class="d2c_card_body">
-                                   <p style="text-align: center; max-width: 350px;">El branding es el arte de construir y comunicar la esencia de una marca, creando una identidad que resuene y perdure. Aquí encontrarás proyectos de que destacan por su estrategia y creatividad, ayudando a cada marca a posicionarse y conectar con su audiencia.</p>
-                                </div>
-                                <a href="" class="btn">Ver</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/square_element.png" alt="Square Element">
-            </section>
-            <!-- Pricing Section End -->
-        </div>
+  <section class="lazy slider" data-sizes="50vw">
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=1-350w" data-srcset="http://placehold.it/650x300?text=1-650w 650w, http://placehold.it/960x300?text=1-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=2-350w" data-srcset="http://placehold.it/650x300?text=2-650w 650w, http://placehold.it/960x300?text=2-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=3-350w"  data-srcset="http://placehold.it/650x300?text=3-650w 650w, http://placehold.it/960x300?text=3-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=4-350w"  data-srcset="http://placehold.it/650x300?text=4-650w 650w, http://placehold.it/960x300?text=4-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <img data-lazy="http://placehold.it/350x300?text=5-350w"  data-srcset="http://placehold.it/650x300?text=5-650w 650w, http://placehold.it/960x300?text=5-960w 960w" data-sizes="100vw">
+    </div>
+    <div>
+      <!-- this slide should inherit the sizes attr from the parent slider -->
+      <img data-lazy="http://placehold.it/350x300?text=6-350w"  data-srcset="http://placehold.it/650x300?text=6-650w 650w, http://placehold.it/960x300?text=6-960w 960w">
+    </div>
+  </section>
 
-        <div class="d2c_testimonial_contact_bg">
-            <!-- Testimonial Section Start -->
-            <section class="d2c_testimonial_wrapper" id="testimonial">
-                <div class="container">
-                    <h6 class="text-center">Testimonios</h6>
-                    <h2 class="text-center">Algunas opiniones sobre mi trabajo</h2>
-                    <div class="row d2c_testimonial_slider px-5">
-                        <div class="col">
-                            <div class="d2c_testimonial_card px-1 px-md-5">
-                                <h3 class="text-center">Con base en mi experiencia trabajando con Alma puedo decir que es una persona responsable, inteligente, eficaz, atenta, creativa y excelente diseñadora. <br>
-                                    Haciendo su servicio social en SUAYED, pude observar muchas habilidades ideales para diseño editorial,  diseño web, programación, diseño de cartel, edición de video y en general una gran habilidad para aprender rápidamente de cualquier tema. <br>
-                                    Como compañera de proyecto en ADI SUAYED hemos trabajado con la plataforma moodle, lenguaje html y hemos aprendido mucho de la inteligencia artificial. 
-                                    </h3>
-                                <p class="mb-0">Victor Hugo Hernández Zepeda </p> 
-                                <span class="mb-2 mb-lg-3">Plataformas web SUAyED</span>
-                                <ul class="list-group list-group-horizontal">
-                                    <li>
-                                       Cel. 55 5909 6955
-                                    </li>
-                                    <li>
-                                        dwsua@acatlan.unam.mx
-                                    </li>
-                                    <li>
-                            
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d2c_testimonial_card px-1 px-md-5">
-                                <h3 class="text-center">Alma es una persona muy profesional, ha sido altamente gratificante trabajar con ella.  <br>
-                                    En la integración de asignaturas siempre ha demostrado una gran capacidad y excelente desempeño. Tiene grandes habilidades en el diseño web. <br>
-                                    Es muy puntual, responsable y sumamente rápida en el trabajo que realiza. <br> Completamente eficiente. <br>
-                                    Sin duda la recomiendo ampliamente y la felicito.
-                                    </h3>
-                                <p class="mb-0">Samael A. Guzmán Becerra  </p>
-                                <span class="mb-2 mb-lg-3">Coordinador del Proyecto de Pedagogía a distancia <br> División del SUAyED, FES Acatlán  </span>
-                                <ul class="list-group list-group-horizontal">
-                                    <li>
-                                        Cel. 5510166069
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d2c_testimonial_card px-1 px-md-5">
-                                <h3 class="text-center">Para mi haber trabajado con Alma Mateo ha sido muy gratificante ya que desde que tuve la oportunidad de trabajar con ella como alumna de la materia Manipulación Digital de la Imaen Fotográfica demostró mucha calidad y responsabilisad. <br>
-                                    Posteriormente como prestadora de Sercvicio Social en el programa del SUAyED demostró mucha iniciativa calidad y profesionalismo.
-                                    <br>
-                                    Es sin duda una alumna ejemplar y a quien agradezco su calidad como persona y como Diseñadora gráfica.
-                                    </h3>
-                                <p class="mb-1">Ariel Carranza</p>
-                                <span class="mb-2 mb-lg-3">Orientación Académica SUAyED</span>
-                                <ul class="list-group list-group-horizontal">
-                                    <li>
-                                        Cel. 55 5944 1394
-                                    </li>
-                                    <li>
-                                        rcsua@acatlan.unam.mx
-                                    </li>
-                                    <li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d2c_testimonial_card px-1 px-md-5">
-                                <h3 class="text-center">Colabora de manera muy responsable y profesional en la integración de contenidos y actividades en la plataforma educativa creada para la Licenciatura Pedagogía a Distancia, proyecto en construcción coordinado por el SUAyED de la FES Acatlán. 
-                                    </h3>
-                                <p class="mb-1">María Guadalupe Alonso Quintana</p>
-                                <span class="mb-2 mb-lg-3">Secretaria Académica UAYED</span>
-                                <ul class="list-group list-group-horizontal">
-                                    <li>
-                                        Cel. 55 4081 0319
-                                    </li>
-                                    <li>
-                                        sua@acatlan.unam.mx
-                                    </li>
-                                    <li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Testimonial Section End -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".vertical-center-4").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 2
+      });
+      $(".vertical-center-3").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".vertical-center-2").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      });
+      $(".vertical-center").slick({
+        dots: true,
+        vertical: true,
+        centerMode: true,
+      });
+      $(".vertical").slick({
+        dots: true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 5,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+      $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true
+      });
+    });
+</script>
 
-            <!-- Contact Section Start -->
-            <section class="d2c_contact_wrapper position-relative" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 mb-4 mb-lg-0 wow fadeInLeft">
-                            <div class="d2c_card">
-                                <h6>Contacto</h6>
-                                <h2 class="mb-3">Ponte en contacto conmigo</h2>
-                                <form class="row needs-validation" action="send_email.php" method="POST" novalidate>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control" name="name" id="validationCustomFirstName" placeholder="Name :" autocomplete="off" required>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="input-group has-validation">
-                                            <input type="email" class="form-control" name="email" id="validationCustomEmail" placeholder="Email :" autocomplete="on" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea class="form-control" rows="5" name="message" id="validationCustomMessage" placeholder="Write Message :" required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn" type="submit">Contactar</button>
-                                    </div>
-                                </form>
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInRight">
-                            <div class="d2c_card">
-                                <div class="pdf-container">
-                                    <embed src="./assets/images/AlmaMateoCV.pdf" type="application/pdf" width="100%" height="600px">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/images/square_element.png" alt="Square Element">
-                <img src="./assets/images/tringle_element.png" alt="Tringle Element">
-            </section>
-            <!-- Contact Section End -->
-        </div>
-
-        <!-- Footer Section Start -->
-        <footer class="d2c_footer_wrapper">
-            <div class="d2c_footer_bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-4 col-xl-5 mb-5 mb-lg-0 wow fadeInLeft">
-                            <div class="d2c_footer_left">
-                                <a href="./index.html">
-                                    <img src="./assets/images/LOGO-LARGO-B.png" alt="Footer Logo">
-                                </a>
-                                <p class="mb-0">Gracias por visitar mi espacio. Estoy aquí para ayudarte a llevar tus ideas a la realidad a través del diseño y la creatividad. Juntos podemos crear algo único y memorable. </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl wow fadeInUp">
-                            <h4>Detalles de Contacto</h4>
-                            <ul class="d2c_info_link mb-5 mb-md-0">
-                                <li class="mb-3">
-                                    <a href="tel:55-71-22-81-07">
-                                        <span>
-                                            <i class="fas fa-phone-alt"></i>
-                                        </span>
-                                        55 7122 8107
-                                    </a>
-                                </li>
-                                <li class="mb-3">
-                                    <a href="mailto:almamateop@gmail.com">
-                                        <span>
-                                            <i class="far fa-envelope"></i>
-                                        </span>
-                                        almamateop@gmail.com
-                                    </a>
-                                </li>
-                               
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl wow fadeInRight">
-                            <h4>Redes sociales</h4>
-                            
-                            <ul class="d2c_social_link list-group list-group-horizontal">
-                                <li>
-                                    <a href="" target="_blank"><i class="fab fa-tiktok"></i></a>
-                                </li>
-                                <li>
-                                    <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                                </li>
-                                <li>
-                                    <a href="" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Footer Section End -->
-
-        <!-- Copy Right Start -->
-        <div class="d2c_copy_wrapper">
-            <p class="mb-0">&copy; 2024 <a href="https://www.designtocodes.com/" target="_blank">ALMA MATEO</a>. Todos los derechos reservados.</p>
-        </div>
-        <!-- Copy Right End -->
-
-        <!--   Scroll Button Start   -->
-        <div id="scrollBtn">
-            <a href="#">
-                <i class="fas fa-chevron-up"></i>
-            </a>
-        </div>
-        <!--   Scroll Button  End   -->
-    </main>
-
-
-    <!-- JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- WOW Animation JS -->
-    <script src="./lib/WOW-master/dist/wow.min.js"></script>
-    <!-- Bootstrap JS Link -->
-    <script src="./lib/bootstrap-5/js/bootstrap.bundle.min.js"></script>
-    <!-- fancybox Image -->
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <!-- Slider JS Link -->
-    <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>
-    <!-- Main JS Link -->
-    <script src="./assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- 
-    Template Name: {{ NextGenAppsPro - Free Bootstrap 5 Portfolio Website Template }}
-    Template URL: {{ https://www.designtocodes.com/product/nextgenappspro-free-portfolio-website-template }}
-    Description: {{NextGenAppsPro - Portfolio Website Template is fully responsive and customizable, you can create portfolio websites in minutes.}}
-    Author: DesignToCodes
-    Author URL: https://www.designtocodes.com
-    Text Domain: {{ NextGenApps Pro }}
- -->
